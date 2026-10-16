@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Main screen: a full-screen heat map under the "MainView" title bar,
+    matching the layout given in the assignment.
+-->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:LocationTracker.Controls"
+             x:Class="LocationTracker.MainPage"
+             Title="MainView">
+
+    <!-- Custom map control that draws saved locations as a heat map -->
+    <controls:HeatMap x:Name="HeatMapView"
+                      CellSizeMeters="25"
+                      ShowPath="False" />
+
+</ContentPage>
